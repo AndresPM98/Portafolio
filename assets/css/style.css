@@ -259,7 +259,7 @@ h6 {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 400px;
+  min-width: 300px;
 }
 
 #hero h1 {
@@ -848,6 +848,9 @@ section {
 }
 
 .contact .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -887,28 +890,26 @@ section {
   padding-top: 5px;
 }
 
-.contact .info .social-links {
-  padding-left: 60px;
+.contact .info .social-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
 }
 
-.contact .info .social-links a {
+.contact .info .social-contact a {
   font-size: 18px;
-  display: inline-block;
-  background: #333;
   color: #fff;
-  line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  margin-right: 10px;
 }
 
-.contact .info .social-links a:hover {
-  background: #149ddd;
+.contact .info .social-contact i:hover {
   color: #fff;
+  background-color:  #149ddd;
 }
 
 .contact .info .email:hover i,
