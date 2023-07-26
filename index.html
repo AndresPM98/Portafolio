@@ -40,20 +40,30 @@
   <style>
     .skills-row {
       display: flex;
+      flex-wrap: wrap; 
+      justify-content: flex-start;
       align-items: center;
       margin-top: 20px;
       margin-bottom: 20px;
     }
-
+  
+    .skill {
+      margin: 10px;
+    }
+  
     .skill img {
       width: 75px;
       height: auto;
+      cursor: pointer;
+      transition: transform 0.5s ease; /* Agrega una transición suave al hacer hover */
     }
-
+  
     .skill img:hover {
       transform: scale(1.5);
     }
+  
   </style>
+  
 </head>
 
 <body>
@@ -67,7 +77,7 @@
 
       <div class="profile">
         <img src="assets/img/perfil.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Andrés Pérez Merello</a></h1>
+        <h1 class="text-light"><a href="index.html">Andrés P. M.</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://api.whatsapp.com/send?phone=5493875998717" target="_blank" class="whatsapp"><i
               class="bx bxl-whatsapp"></i></a>
@@ -94,7 +104,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Andrés P. M.</h1>
+      <h1>Andrés Pérez Merello</h1>
       <p><span class="typed" data-typed-items="Full-Stack Developer"></span></p>
     </div>
   </section><!-- End Hero -->
